@@ -39,9 +39,9 @@
     </style>
 </head>
 <body>
-    <div class="container mt-5">
+    <div class="container mt-5 text-center"> <!-- Center content -->
         <h3>Daftar Nilai Siswa</h3> 
-        <table class="table table-bordered table-striped">
+        <table class="table table-bordered table-striped mx-auto"> <!-- Center table -->
             <thead>
                 <tr>
                     <th>No</th>
