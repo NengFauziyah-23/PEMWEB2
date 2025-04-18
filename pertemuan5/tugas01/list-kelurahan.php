@@ -34,6 +34,7 @@ require_once './template/topbar.php';
                             <tr>
                                 <th scope="col">No</th>
                                 <th scope="col">Nama</th>
+                                <th scope="col">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -41,6 +42,11 @@ require_once './template/topbar.php';
                             <tr>
                                 <td><?= $no++; ?></td>
                                 <td><?= $kelurahan['nama']; ?></td>
+                                <td>
+                                    <a href="form-kelurahan.php?=<?= $kelurahan['id'] ?>" class="btn btn-sm btn-outline-warning">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </td>
                             </tr>
                             <?php endforeach; ?>
                         </tbody>

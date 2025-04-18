@@ -1,4 +1,6 @@
 <?php
+require './dbkoneksi.php';
+
 require_once './template/top.php';
 ?>
         <!-- Sidebar -->
@@ -41,7 +43,7 @@ require_once './template/topbar.php';
   </div> 
   <div class="form-group row">
     <div class="offset-4 col-8">
-      <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+      <input name="submit" type="submit" class="btn btn-primary" value="Simpan">
     </div>
   </div>
 </form>

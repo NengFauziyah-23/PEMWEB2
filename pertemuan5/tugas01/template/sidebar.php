@@ -9,7 +9,7 @@ $menus = [
             "label" => "List Kelurahan",
             ],
             [
-            "link" => "tambah-kelurahan.php",
+            "link" => "form-kelurahan.php",
             "label" => "Tambah",
             ],
         ]
@@ -23,7 +23,7 @@ $menus = [
             "label" => "List Pasien",
             ],
             [
-            "link" => "tambah-pasien.php",
+            "link" => "form-pasien.php",
             "label" => "Tambah",
             ],
         ]
