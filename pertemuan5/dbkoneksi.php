@@ -15,7 +15,7 @@ $options = [
 ];
 
 try {
-    $db = new PDO($dsn, $username, $password, $options);
+    $dbh = new PDO($dsn, $username, $password, $options);
     echo "Database connected.";
 } catch (\Throwable $th){
     echo "Database connection error: " . $th;

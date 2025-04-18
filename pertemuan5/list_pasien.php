@@ -25,4 +25,3 @@ $list_pasien = $db->query("SELECT * FROM pasien");
     <?php } ?>
 </tbody>
 </table>
-

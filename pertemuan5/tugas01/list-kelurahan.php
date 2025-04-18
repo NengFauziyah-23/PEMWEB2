@@ -2,10 +2,10 @@
 require './dbkoneksi.php';
 
 require_once './template/top.php';
-?>
-        <!-- Sidebar -->
-<?php
 require_once './template/sidebar.php';
+
+$request = $dbh->query("SELECT * FROM kelurahan");
+$list_kelurahan = $request->fetchAll();
 ?>        
         <!-- End of Sidebar -->
 
@@ -17,7 +17,7 @@ require_once './template/sidebar.php';
 
             <!-- Topbar -->    
 <?php
-require_once './template/topbar.php'
+require_once './template/topbar.php';
 ?>
             <!-- End of Topbar -->
                 <!-- Begin Page Content -->
@@ -32,35 +32,22 @@ require_once './template/topbar.php'
                      <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col">#</th>
+                                <th scope="col">No</th>
                                 <th scope="col">Nama</th>
                             </tr>
                         </thead>
                         <tbody>
+                          <?php $no=1; foreach($list_kelurahan as $kelurahan) : ?>
                             <tr>
-                                <td>1</td>
-                                <td>Caringinnunggal</td>
+                                <td><?= $no++; ?></td>
+                                <td><?= $kelurahan['nama']; ?></td>
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Mekarsari</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Cikangkung</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Ciracap</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Waluran</td>
-                            </tr>
+                            <?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>
             </div>
+            
         </div>
             <!-- /.container-fluid -->
 

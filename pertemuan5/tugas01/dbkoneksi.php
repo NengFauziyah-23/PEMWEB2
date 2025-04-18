@@ -14,7 +14,7 @@ $options = [
 ];
 
 try {
-    $pdo = new PDO($dsn, $user, $pass, $options);
+    $dbh = new PDO($dsn, $user, $pass, $options);
 } catch (\Throwable $e) {
     echo "Connection error: " . $e->getMessage(); // <- ini bagian yang diperbaiki
 }
