@@ -11,4 +11,4 @@
     <a href="about">About</a>
     <h1>Halaman Home</h1>
 </body>
-</html>git init
+</html>
